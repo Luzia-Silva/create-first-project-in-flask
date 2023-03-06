@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+<div class="d-flex justify-content-center align-items-center px-4 py-1 my-5">
+  <main class="form-signin text-center" style="min-width: 22rem">
+    <form method="POST" action="">
+      {{login.csrf_token}}
+      <img class="mb-2" src="/static/images/logo.png" alt="" width="200" height="auto">
+      <h1 class="h3 mb-3 fw-bold">Please sign in</h1>
+      <div class="form-floating">
+        {{login.username(class="form-control")}}
+        {% if login.errors.username %}
+        <h1>Please enter your username</h1>
+        {% endif %}
+        <label for="floatingInput">Username</label>
+      </div>
+      <div class="form-floating">
+        {{login.password(class="form-control", autocomplete="off")}}
+        {% if login.errors.password %}
+        <h1>Please enter your password </h1>
+        {% endif %}
+        <label for="floatingPassword">Password</label>
+      </div>
+
+      <div class="checkbox mb-3 mt-2">
+        <label>
+          {{login.remember_me(class="form-check-input")}} Remember me
+        </label>
+      </div>
+      <button class="w-100 btn btn-lg btn-secondary" type="submit">Sign in</button>
+    </form>
+  </main>
+</div>
+
+
+
+
+{% endblock %}
