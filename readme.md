@@ -8,6 +8,7 @@
 
 Dica: A Versão do Flask que está sendo utilizada é inferior a `2.2.3` que é a que eu estou usando agora, então não instale o Flask-Script porque foi descontinuado e na versão atual não é mais necessário para executar o projeto..
  
+Até porque tem 5 anos essa vídeo aula, mas pra mim é uma das melhores ❤️✨
  <br> 
 
 ![IMAGE ALT TEXT HERE](https://steamusercontent-a.akamaihd.net/ugc/82595628823614964/59CA60267C9EF097829F8B6CFDED0CD489F0ECCE/)
